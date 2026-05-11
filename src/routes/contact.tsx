@@ -13,8 +13,8 @@ import { Mail, Phone, MapPin } from "lucide-react";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Us — Metro Taxi Council" },
-      { name: "description", content: "Get in touch with the Metro Taxi Council. Office address, phone, email and contact form." },
+      { title: "Contact Us — Mpumalanga Provinial Taxi Council" },
+      { name: "description", content: "Get in touch with the Mpumalanga Provinial Council. Office address, phone, email and contact form." },
     ],
   }),
   component: ContactPage,
@@ -83,7 +83,7 @@ function ContactPage() {
                 <div className="grid h-10 w-10 place-items-center rounded-lg bg-secondary"><MapPin className="h-5 w-5 text-primary" /></div>
                 <div>
                   <h3 className="font-semibold">Office Address</h3>
-                  <p className="text-sm text-muted-foreground">123 Council Avenue, Capital City, 10001</p>
+                  <p className="text-sm text-muted-foreground">10 Laver Streets,Gholfsig Middelburg,1050</p>
                 </div>
               </div>
             </Card>
@@ -92,7 +92,7 @@ function ContactPage() {
                 <div className="grid h-10 w-10 place-items-center rounded-lg bg-secondary"><Phone className="h-5 w-5 text-primary" /></div>
                 <div>
                   <h3 className="font-semibold">Phone</h3>
-                  <p className="text-sm text-muted-foreground">+1 (555) 123-4567</p>
+                  <p className="text-sm text-muted-foreground">013 243 0334/0865</p>
                 </div>
               </div>
             </Card>
@@ -101,14 +101,14 @@ function ContactPage() {
                 <div className="grid h-10 w-10 place-items-center rounded-lg bg-secondary"><Mail className="h-5 w-5 text-primary" /></div>
                 <div>
                   <h3 className="font-semibold">Email</h3>
-                  <p className="text-sm text-muted-foreground">info@metrotaxicouncil.com</p>
+                  <p className="text-sm text-muted-foreground">mptc0214@gmail.com</p>
                 </div>
               </div>
             </Card>
             <Card className="overflow-hidden p-0">
               <iframe
                 title="Office location map"
-                src="https://www.google.com/maps?q=Times+Square,New+York&output=embed"
+                src="https://www.google.com/maps?q=10+Laver+Streets,Gholfsig+Middelburg,1050&output=embed"
                 className="h-64 w-full border-0"
                 loading="lazy"
               />

@@ -1,7 +1,8 @@
 import { useState } from "react";
 import { Link } from "@tanstack/react-router";
-import { Menu, X, Car } from "lucide-react";
+import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/logo.png";
 
 const links = [
   { to: "/", label: "Home" },
@@ -17,11 +18,8 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/80 backdrop-blur-lg">
       <div className="container-pro flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-2 font-display text-lg font-bold">
-          <span className="grid h-9 w-9 place-items-center rounded-lg gradient-gold shadow-glow">
-            <Car className="h-5 w-5 text-primary" />
-          </span>
-          <span>Metro Taxi Council</span>
+        <Link to="/" className="flex items-center">
+          <img src={logo} alt="Metro Taxi Council logo" className="h-11 w-38 rounded-lg" />
         </Link>
         <nav className="hidden items-center gap-1 md:flex">
           {links.map((l) => (

@@ -3,12 +3,12 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Shield, Users, Award, Car, Phone } from "lucide-react";
 import { Section } from "@/components/site/Section";
-import heroImg from "@/assets/hero-taxi.jpg";
+import heroImg from "@/assets/tax.jfif";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Metro Taxi Council — Driving Excellence Together" },
+      { title: "Mpumalanga Provincial Taxi Council — Driving Excellence Together" },
       { name: "description", content: "Official council for professional taxi operators. Safety, integrity, and service excellence." },
     ],
   }),
@@ -30,14 +30,14 @@ function Index() {
         <div className="absolute inset-0" style={{ background: "var(--gradient-overlay)" }} />
         <div className="relative container-pro flex min-h-[88vh] flex-col items-start justify-center py-24 text-primary-foreground">
           <p className="mb-4 text-xs font-semibold uppercase tracking-[0.25em] text-gradient-gold animate-fade-in">
-            Established 1998
+            Established 2001
           </p>
           <h1 className="max-w-3xl text-4xl font-bold leading-tight md:text-6xl animate-fade-up">
             Driving Excellence,<br />
             <span className="text-gradient-gold">Serving Our City.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-primary-foreground/85 animate-fade-up">
-            The Metro Taxi Council unites professional drivers and operators committed to safety,
+            The Mpumalanga Provincial Taxi Council unites professional drivers and operators committed to safety,
             fair practice, and outstanding passenger service.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 animate-fade-up">

@@ -10,12 +10,12 @@ export function Footer() {
         <div className="space-y-4">
           <Link to="/" className="flex items-center gap-2 font-display text-lg font-bold">
             <span className="grid h-9 w-9 place-items-center rounded-lg gradient-gold">
-              <Car className="h-5 w-5 text-primary" />
+              <Car className="h-5 w-9 text-primary" />
             </span>
-            Metro Taxi Council
+            Mpumalanga Provincial Taxi Council
           </Link>
           <p className="text-sm text-muted-foreground">
-            Representing professional taxi operators with integrity, safety, and excellence since 1998.
+            Representing professional taxi operators with integrity, safety, and excellence since 2001.
           </p>
           <div className="flex gap-3">
             {[Facebook, Twitter, Linkedin, Instagram].map((Icon, i) => (
@@ -40,24 +40,24 @@ export function Footer() {
         <div>
           <h4 className="mb-4 text-sm font-semibold text-foreground">Contact</h4>
           <ul className="space-y-3 text-sm text-muted-foreground">
-            <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0" />123 Council Avenue, Capital City</li>
-            <li className="flex items-center gap-2"><Phone className="h-4 w-4" />+1 (555) 123-4567</li>
-            <li className="flex items-center gap-2"><Mail className="h-4 w-4" />info@metrotaxicouncil.com</li>
+            <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0" />10 Laver Streets,Gholfsig Middelburg,1050</li>
+            <li className="flex items-center gap-2"><Phone className="h-4 w-4" />013 243 0334/0865</li>
+            <li className="flex items-center gap-2"><Mail className="h-4 w-4" />mptc0214@gmail.com</li>
           </ul>
         </div>
 
-        <div>
+        {/* <div>
           <h4 className="mb-4 text-sm font-semibold text-foreground">Newsletter</h4>
           <p className="mb-3 text-sm text-muted-foreground">Stay updated with our latest news and events.</p>
           <form className="flex gap-2" onSubmit={(e) => e.preventDefault()}>
             <Input type="email" placeholder="Your email" required />
             <Button type="submit" size="sm">Join</Button>
           </form>
-        </div>
+        </div> */}
       </div>
       <div className="border-t border-border">
         <div className="container-pro flex flex-col items-center justify-between gap-2 py-5 text-xs text-muted-foreground md:flex-row">
-          <p>© {new Date().getFullYear()} Metro Taxi Council. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} SANTACO. All rights reserved.</p>
           <p>Built with care for our drivers and community.</p>
         </div>
       </div>
