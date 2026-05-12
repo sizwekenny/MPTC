@@ -37,7 +37,7 @@ function Index() {
             <span className="text-gradient-gold">Serving Our City.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-primary-foreground/85 animate-fade-up">
-            The Mpumalanga Provincial Taxi Council unites professional drivers and operators committed to safety,
+            The <strong className="uppercase font-semibold">Mpumalanga Provincial Taxi Council</strong> unites professional drivers and operators committed to safety,
             fair practice, and outstanding passenger service.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 animate-fade-up">
