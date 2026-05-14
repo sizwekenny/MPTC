@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Shield, Users, Award, Car, Phone } from "lucide-react";
 import { Section } from "@/components/site/Section";
-import heroImg from "@/assets/tax.jfif";
+import heroImg from "@/assets/taxi.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -37,7 +37,7 @@ function Index() {
             <span className="text-gradient-gold">Serving Our City.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-primary-foreground/85 animate-fade-up">
-            The <strong className="uppercase font-semibold">Mpumalanga Provincial Taxi Council</strong> unites professional drivers and operators committed to safety,
+            The <strong className="uppercase font-semibold text-yellow-400">Mpumalanga Provincial Taxi Council</strong> unites professional drivers and operators committed to safety,
             fair practice, and outstanding passenger service.
           </p>
           <div className="mt-8 flex flex-wrap gap-3 animate-fade-up">
@@ -51,8 +51,8 @@ function Index() {
 
           <div className="mt-16 grid w-full max-w-3xl grid-cols-3 gap-6 animate-fade-up">
             {[
-              { n: "2,500+", l: "Members" },
-              { n: "25+", l: "Years of Service" },
+              { n: "22,000", l: "Operating Taxis" },
+              { n: "20+", l: "Years of Service" },
               { n: "98%", l: "Driver Satisfaction" },
             ].map((s) => (
               <div key={s.l} className="border-l-2 border-gold pl-4">
@@ -89,11 +89,11 @@ function Index() {
       <section className="bg-primary text-primary-foreground">
         <div className="container-pro flex flex-col items-center gap-6 py-16 text-center md:flex-row md:justify-between md:text-left">
           <div className="max-w-xl">
-            <h2 className="text-3xl font-bold">Become a member today</h2>
-            <p className="mt-2 text-primary-foreground/80">Join thousands of professional drivers benefiting from our advocacy, training, and support.</p>
+            <h2 className="text-3xl font-bold">Have any questions?</h2>
+            <p className="mt-2 text-primary-foreground/80">Don't hesitate to reach out to us for more information from our professional admins</p>
           </div>
           <Button asChild size="lg" className="gradient-gold text-primary hover:opacity-90">
-            <Link to="/contact"><Car className="mr-2 h-4 w-4" /> Join the Council</Link>
+            <Link to="/contact"><Car className="mr-2 h-4 w-4" /> Contact the Council</Link>
           </Button>
         </div>
       </section>

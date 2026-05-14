@@ -6,10 +6,10 @@ import logo from "@/assets/logo.png";
 
 const links = [
   { to: "/", label: "Home" },
-  { to: "/about", label: "About Us" },
-  { to: "/our-story", label: "Our Story" },
   { to: "/events", label: "Events" },
   { to: "/news", label: "News" },
+  { to: "/our-story", label: "Our Story" },
+  { to: "/about", label: "About Us" },
   { to: "/contact", label: "Contact" },
 ] as const;
 

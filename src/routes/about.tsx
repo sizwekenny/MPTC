@@ -2,6 +2,9 @@ import { createFileRoute } from "@tanstack/react-router";
 import { Card } from "@/components/ui/card";
 import { PageHero, Section } from "@/components/site/Section";
 import { Target, Eye, Heart, Users } from "lucide-react";
+import staffFff from "@/assets/fff.jpg";
+import placeholderLogo from "@/assets/logo.png";
+import placeholderTaxi from "@/assets/tax.jfif";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -14,11 +17,11 @@ export const Route = createFileRoute("/about")({
 });
 
 const leaders = [
-  { name: "James Mwangi", role: "Chairman", initial: "JM" },
-  { name: "Aisha Patel", role: "Deputy Chairman", initial: "AP" },
-  { name: "David Okafor", role: "Secretary", initial: "DO" },
-  { name: "Maria Santos", role: "Treasurer", initial: "MS" },
- 
+  { name: "F.J Sibanyoni", role: "Chairperson", image: staffFff },
+  { name: "J.K Phoku", role: "Deputy Chairperson", image: placeholderLogo },
+  { name: "P.S Sibanyoni", role: "Secretary", image: placeholderTaxi },
+  { name: "L.L Manana", role: "Deputy Secretary", image: placeholderLogo },
+  { name: "D.S Masango", role: "Treasurer", image: placeholderTaxi },
 ];
 
 function AboutPage() {
@@ -57,8 +60,8 @@ function AboutPage() {
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {leaders.map((m) => (
             <Card key={m.name} className="group hover-lift overflow-hidden p-6 text-center">
-              <div className="mx-auto mb-4 grid h-28 w-28 place-items-center rounded-full gradient-hero text-2xl font-bold text-primary-foreground transition-transform group-hover:scale-105">
-                {m.initial}
+              <div className="mx-auto mb-4 h-28 w-28 rounded-full overflow-hidden transition-transform group-hover:scale-105">
+                <img src={m.image} alt={m.name} className="h-full w-full object-cover" />
               </div>
               <h3 className="font-semibold">{m.name}</h3>
               <p className="mt-1 text-sm text-gradient-gold font-medium">{m.role}</p>
