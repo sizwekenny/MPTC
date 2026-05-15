@@ -17,12 +17,12 @@ export const Route = createFileRoute("/events")({
 });
 
 const events = [
-  { id: 1, name: "National Transport Summit", date: "Mar 12, 2025", location: "Capital Convention Center", category: "Summit", desc: "Keynote panel on the future of urban mobility and shared transport.", img: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=900&q=80" },
-  { id: 2, name: "Driver Wellness Day", date: "Feb 02, 2025", location: "Riverside Park", category: "Community", desc: "A day of free health checks, training and family activities for our members." },
-  { id: 3, name: "Green Fleet Expo", date: "Nov 18, 2024", location: "Metro Arena", category: "Conference", desc: "Showcasing the latest hybrid and EV vehicles for taxi operators." },
-  { id: 4, name: "Annual Awards Gala", date: "Oct 04, 2024", location: "Grand Heritage Hotel", category: "Gala", desc: "Celebrating excellence and long service among our members." },
-  { id: 5, name: "City Safety Forum", date: "Aug 22, 2024", location: "City Hall", category: "Forum", desc: "Collaborative workshop with police on driver and passenger safety." },
-  { id: 6, name: "Youth Career Fair", date: "May 15, 2024", location: "Trade Hall", category: "Community", desc: "Mentoring next-generation drivers and showcasing industry careers." },
+  { id: 1, name: "National Transport Summit", date: "Mar 12, 2026", location: "Capital Convention Center", category: "Summit", desc: "Keynote panel on the future of urban mobility and shared transport.", img: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=900&q=80" },
+  // { id: 2, name: "Driver Wellness Day", date: "Feb 02, 2025", location: "Riverside Park", category: "Community", desc: "A day of free health checks, training and family activities for our members." },
+  // { id: 3, name: "Green Fleet Expo", date: "Nov 18, 2024", location: "Metro Arena", category: "Conference", desc: "Showcasing the latest hybrid and EV vehicles for taxi operators." },
+  // { id: 4, name: "Annual Awards Gala", date: "Oct 04, 2024", location: "Grand Heritage Hotel", category: "Gala", desc: "Celebrating excellence and long service among our members." },
+  // { id: 5, name: "City Safety Forum", date: "Aug 22, 2024", location: "City Hall", category: "Forum", desc: "Collaborative workshop with police on driver and passenger safety." },
+  // { id: 6, name: "Youth Career Fair", date: "May 15, 2024", location: "Trade Hall", category: "Community", desc: "Mentoring next-generation drivers and showcasing industry careers." },
 ];
 
 const categories = ["All", "Summit", "Community", "Conference", "Gala", "Forum"];

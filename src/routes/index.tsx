@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ArrowRight, Shield, Users, Award, Car, Phone } from "lucide-react";
 import { Section } from "@/components/site/Section";
-import heroImg from "@/assets/taxi.jpg";
+import heroImg from "@/assets/taxi.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
