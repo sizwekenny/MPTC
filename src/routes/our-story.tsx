@@ -15,7 +15,7 @@ export const Route = createFileRoute("/our-story")({
 const milestones = [
   { year: "2001", title: "The beginning of unity", text: "A handful of drivers and structures came together and formed the SATACO" },
   { year: "2009", title: "Official recognition and growth", text: "SATACO + NTA + PROTAC came together to strengthen our collective voice and form SANTACO." },
-  { year: "2020", title: "New Formation", text: "SANTACO can together and formed a SUBSIDY" },
+  { year: "2020", title: "New Formation", text: "SANTACO came together and formed a SUBSIDY" },
   // { year: "2015", title: "Digital dispatch", text: "Pioneered a member-owned digital dispatch platform, putting drivers ahead of the curve." },
   // { year: "2020", title: "Standing strong", text: "Supported thousands of members through the pandemic with relief funds and PPE." },
   // { year: "2024", title: "Greener fleet", text: "Began our transition program toward hybrid and electric vehicles across the metro fleet." },

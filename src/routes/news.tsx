@@ -22,7 +22,7 @@ export const Route = createFileRoute("/news")({
 });
 
 const allNews = [
-  { id: 1, title: "Council secures new partnership for members at the Nkangala District municipality as now they are moving into the e-Hailing business", date: "May 13, 2026", preview: "A landmark agreement with E-Hailing team,the Taxi assoiciation and Toyota for bringing a new era of convenience to our members for their safety.", images: [newsImg1, newsImg2,newsImg3,newsImg4] },
+  { id: 1, title: "Council secures new partnership for members at the Nkangala District municipality as now they are moving into the e-Hailing business", date: "May 13, 2026", preview: "A landmark agreement with E-Hailing team,the Taxi assoiciation and Toyota for bringing a new era of convenience to our members for their safety.", images: [] },
   // { id: 2, title: "Driver training academy expands to weekend sessions", date: "Apr 10, 2025", preview: "Responding to high demand, the academy now offers weekend defensive driving and customer service modules.", },
   // { id: 3, title: "New safety standards adopted across the fleet", date: "Mar 28, 2025", preview: "Updated guidelines cover vehicle inspections, in-car cameras and incident reporting procedures." },
   // { id: 4, title: "Annual general meeting set for June", date: "Mar 12, 2025", preview: "Members are invited to participate in the AGM where new committee members will be elected." },

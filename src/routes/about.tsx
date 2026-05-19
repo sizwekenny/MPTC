@@ -4,7 +4,7 @@ import { PageHero, Section } from "@/components/site/Section";
 import { Target, Eye, Heart, Users } from "lucide-react";
 import staffFff from "@/assets/fff.jpg";
 import placeholderLogo from "@/assets/logo.png";
-import placeholderTaxi from "@/assets/tax.jfif";
+import placeholderTaxi from "@/assets/taxi.png";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -30,7 +30,7 @@ function AboutPage() {
       <PageHero
         eyebrow="About Us"
         title="A council built by drivers, for drivers"
-        subtitle="Fast and friendly, we offer professional transportation services throughout the Mpumalanga area. Our team is up for any job, from big to small. Mpumalanga locals know that we stand behind our work, putting your satisfaction as our #1 priority. What really makes us stand out is our dedication, great prices and attention to detail. Contact us to learn more from one of our expert staff on how our professional team can help you!"
+        subtitle="Fast and friendly, we offer professional transportation services throughout the Mpumalanga area. Our team is up for any job, from big to small. Mpumalanga locals know that we stand behind our work, putting your satisfaction as our #1 priority. What really makes us stand out is our dedication and attention to detail. Contact us to learn more from one of our expert staff on how our professional team can help you!"
       />
 
       <Section eyebrow="Our purpose" title="Mission, Vision & Values">
