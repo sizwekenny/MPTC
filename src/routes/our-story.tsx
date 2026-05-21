@@ -13,9 +13,12 @@ export const Route = createFileRoute("/our-story")({
 });
 
 const milestones = [
-  { year: "2001", title: "The beginning of unity", text: "A handful of drivers and structures came together and formed the SATACO" },
-  { year: "2009", title: "Official recognition and growth", text: "SATACO + NTA + PROTAC came together to strengthen our collective voice and form SANTACO." },
-  { year: "2020", title: "New Formation", text: "SANTACO came together and formed a SUBSIDY" },
+  { year: "2001", title: "The formation of SANTACO", text: "Following a government led National Task Team(NTTT) process, which facilitated the converges of all taxi formations into a national connference, the SANTACO was formed in Durban. The 1st democratic leadership was elected. 11 September 2001" },
+  { year: "2005", title: "Officiation of SANTACO Constitution", text: "The National leadership of SANTACO signed its organisations governing llaw which is the SANTACO Constitution" },
+  { year: "2009", title: "Official recognition and growth", text: "SATACO + NTA + PROTAC came together to strengthen our collective voice." },
+  { year: "2010", title: "Hlokomela Road Safety Campaign launch", text: "on Novermber 10th, SANTACO launched its road safety campaign called Hlokomela to complement government's Arrive Alive campaign and drive an awerness of road safety and oversee training for the Taxi industry" },
+  { year: "2015", title: "Formation of SANTACO Women's Desk", text: "SANTACO launched the women's Desk cater for the need of all women in the taxi industry. July 2015" },
+  { year: "2020", title: "New Formation", text: "SANTACO came together and formed a SUBSIDY." },
   // { year: "2015", title: "Digital dispatch", text: "Pioneered a member-owned digital dispatch platform, putting drivers ahead of the curve." },
   // { year: "2020", title: "Standing strong", text: "Supported thousands of members through the pandemic with relief funds and PPE." },
   // { year: "2024", title: "Greener fleet", text: "Began our transition program toward hybrid and electric vehicles across the metro fleet." },
@@ -26,7 +29,7 @@ function StoryPage() {
     <>
       <PageHero
         eyebrow="Our Story"
-        title="A journey written by drivers"
+        title="SANTACO is the national representative body of the taxi industry in South Africa."
         subtitle="From a small collective to a leading industry voice — these are the moments that shaped us."
       />
       <section className="py-16 md:py-24">

@@ -100,7 +100,7 @@ function AboutPage() {
       <Section eyebrow="Our purpose" title="Mission, Vision & Values">
         <div className="grid gap-6 md:grid-cols-3">
           {[
-            { icon: Target, t: "Our Mission", d: "To represent, protect and advance the interests of taxi operators while delivering trusted service to the public." },
+            { icon: Target, t: "Our Mission", d: "To drive the transformation of public transport through safe, reliable, and innovative mobility and logistics solutions, while promoting economic empowerment and a diversified, sustainable, subsidized industry that serves all stakeholder." },
             { icon: Eye, t: "Our Vision", d: "A safe, fair and modern taxi industry that's the first choice for urban transport." },
             { icon: Heart, t: "Core Values", d: "Integrity, accountability, professionalism, community and continuous improvement." },
           ].map((v) => (
