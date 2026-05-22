@@ -9,8 +9,9 @@ const links = [
   { to: "/our-story", label: "Our Story" },
   { to: "/events", label: "Events" },
   { to: "/news", label: "News" },
-  { to: "/contact", label: "Contact" },
   { to: "/about", label: "About Us" },
+  { to: "/contact", label: "Contact" },
+  
 ] as const;
 
 export function Header() {
@@ -18,9 +19,9 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 w-full border-b border-border/60 bg-background/80 backdrop-blur-lg">
       <div className="container-pro flex h-16 items-center justify-between">
-        <Link to="/" className="flex items-center gap-6">
+        <Link to="/" className="flex items-center gap-3">
           <img src={logo} alt="Metro Taxi Council logo" className="h-11 w-45 rounded-lg" />
-          {/* <span className="text-2xl font-bold">Mpumalanga</span> */}
+          <span className="text-1xl font-bold">Mpumalanga</span>
         </Link>
         <nav className="hidden items-center gap-1 md:flex">
           {links.map((l) => (

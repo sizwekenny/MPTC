@@ -18,7 +18,7 @@ const milestones = [
   { year: "2009", title: "Official recognition and growth", text: "SATACO + NTA + PROTAC came together to strengthen our collective voice." },
   { year: "2010", title: "Hlokomela Road Safety Campaign launch", text: "on Novermber 10th, SANTACO launched its road safety campaign called Hlokomela to complement government's Arrive Alive campaign and drive an awerness of road safety and oversee training for the Taxi industry" },
   { year: "2015", title: "Formation of SANTACO Women's Desk", text: "SANTACO launched the women's Desk cater for the need of all women in the taxi industry. July 2015" },
-  { year: "2020", title: "New Formation", text: "SANTACO came together and formed a SUBSIDY." },
+  // { year: "2020", title: "New Formation", text: "SANTACO came together and formed a SUBSIDY." },
   // { year: "2015", title: "Digital dispatch", text: "Pioneered a member-owned digital dispatch platform, putting drivers ahead of the curve." },
   // { year: "2020", title: "Standing strong", text: "Supported thousands of members through the pandemic with relief funds and PPE." },
   // { year: "2024", title: "Greener fleet", text: "Began our transition program toward hybrid and electric vehicles across the metro fleet." },

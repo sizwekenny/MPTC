@@ -8,6 +8,7 @@ import placeholderLogo from "@/assets/logo.png";
 import placeholderTaxi from "@/assets/taxi.png";
 import ehlanzeni from "@/assets/ehlanzeni.jpeg";
 import gert from "@/assets/gertsibande.jpeg";
+import nkangala from "@/assets/nkangala.png";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -25,6 +26,12 @@ const leaders = [
   { name: "P.S Sibanyoni", role: "Secretary", image: placeholderTaxi },
   { name: "L.L Manana", role: "Deputy Secretary", image: placeholderLogo },
   { name: "D.S Masango", role: "Treasurer", image: placeholderTaxi },
+  { name: "K.W Moropa", role: "Training Officer", image: placeholderTaxi },
+  { name: "L Zulu", role: "Chairperson Women Desk", image: placeholderTaxi },
+  { name: "J Khosa ", role: "Disciplinary Committee", image: placeholderTaxi },
+  { name: "J.S Simelane", role: "Executive Member", image: placeholderTaxi },
+  { name: "M.A Mokonyane", role: "Executive Member", image: placeholderTaxi },
+  { name: "M Nkalanga ", role: "Executive Member", image: placeholderTaxi },
 ];
 
 function TabsLocal() {
@@ -71,7 +78,7 @@ function TabsLocal() {
           {[
             { name: "Ehlanzeni RegionalTaxi Council (MA Msimango Office)", image: ehlanzeni, location: "116 Outteniqua Streets, white River" },
             { name: "Gert Sibande Regional Taxi Council (DL Mabuza Office)", image: gert, location: "98 Oosthuizen Street, Ermelo" },
-            { name: "Nkangala Regional Taxi Council (MS Makeke Office)", image: staffFff, location: "18 Florida Streer, Model park, eMlalahleni" },
+            { name: "Nkangala Regional Taxi Council (MS Makeke Office)", image: nkangala, location: "18 Florida Streer, Model park, eMlalahleni" },
             
           ].map((o) => (
             <Card key={o.name} className="hover-lift overflow-hidden p-2 text-center">
