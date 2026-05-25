@@ -13,13 +13,13 @@ export const Route = createFileRoute("/our-story")({
 });
 
 const milestones = [
-  { year: "2001", title: "The formation of SANTACO", text: "Following a government led National Task Team(NTTT) process, which facilitated the converges of all taxi formations into a national connference, the SANTACO was formed in Durban. The 1st democratic leadership was elected. 11 September 2001" },
+  { year: "2001", title: "The formation of SANTACO", text: "Following a government led National Taxi Task Team(NTTT) process, which facilitated the converges of all taxi formations into a national connference, the SANTACO was formed in Durban. The 1st democratic leadership was elected. 11 September 2001" },
   { year: "2005", title: "Officiation of SANTACO Constitution", text: "The National leadership of SANTACO signed its organisations governing llaw which is the SANTACO Constitution" },
   { year: "2009", title: "Official recognition and growth", text: "SATACO + NTA + PROTAC came together to strengthen our collective voice." },
   { year: "2010", title: "Hlokomela Road Safety Campaign launch", text: "on Novermber 10th, SANTACO launched its road safety campaign called Hlokomela to complement government's Arrive Alive campaign and drive an awerness of road safety and oversee training for the Taxi industry" },
   { year: "2015", title: "Formation of SANTACO Women's Desk", text: "SANTACO launched the women's Desk cater for the need of all women in the taxi industry. July 2015" },
-  // { year: "2020", title: "New Formation", text: "SANTACO came together and formed a SUBSIDY." },
-  // { year: "2015", title: "Digital dispatch", text: "Pioneered a member-owned digital dispatch platform, putting drivers ahead of the curve." },
+  { year: "2020", title: "SANTACO Participated in History National Taxi Lekgotla", text: "SANTACO took part in National Taxi Lekgotla hosted by the department of transport which resolved for SANTACO to be an Apex body of the Taxi industry in October. The lekgotla resulted in the formation of Joint Taxi Task Team in Octomber 2020" },
+  { year: "2024", title: "SANTACO hosts inaugural Policy Conference", text: "For the first time in the history of the Taxi industry, SANTACO conveneda policy conerence where a deligation of all provinces, structures from modes incliding meter taxis,ehailing, cross border and scholar transport. May 2024" },
   // { year: "2020", title: "Standing strong", text: "Supported thousands of members through the pandemic with relief funds and PPE." },
   // { year: "2024", title: "Greener fleet", text: "Began our transition program toward hybrid and electric vehicles across the metro fleet." },
 ];
