@@ -92,7 +92,7 @@ function ContactPage() {
                 <div className="grid h-10 w-10 place-items-center rounded-lg bg-secondary"><Phone className="h-5 w-5 text-primary" /></div>
                 <div>
                   <h3 className="font-semibold">Phone</h3>
-                  <p className="text-sm text-muted-foreground">013 243 0865</p>
+                  <p className="text-sm text-muted-foreground">013 243 0334</p>
                 </div>
               </div>
             </Card>

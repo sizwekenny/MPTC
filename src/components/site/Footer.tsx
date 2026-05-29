@@ -41,7 +41,7 @@ export function Footer() {
           <h4 className="mb-4 text-sm font-semibold text-foreground">Contact</h4>
           <ul className="space-y-3 text-sm text-muted-foreground">
             <li className="flex items-start gap-2"><MapPin className="mt-0.5 h-4 w-4 shrink-0" />10 Laver Streets,Gholfsig Middelburg,1050</li>
-            <li className="flex items-center gap-2"><Phone className="h-4 w-4" />013 243 0865</li>
+            <li className="flex items-center gap-2"><Phone className="h-4 w-4" />013 243 0334</li>
             <li className="flex items-center gap-2"><Mail className="h-4 w-4" />mptc0214@gmail.com</li>
           </ul>
         </div>
