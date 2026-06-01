@@ -5,6 +5,18 @@ import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { Calendar, MapPin } from "lucide-react";
+import agmVideo from "@/assets/AGM.mp4";
+
+type EventItem = {
+  id: number;
+  name: string;
+  date: string;
+  location: string;
+  category: string;
+  desc: string;
+  img?: string;
+  video?: string;
+};
 
 export const Route = createFileRoute("/events")({
   head: () => ({
@@ -16,8 +28,8 @@ export const Route = createFileRoute("/events")({
   component: EventsPage,
 });
 
-const events = [
-  { id: 1, name: "National Transport Summit", date: "Mar 12, 2026", location: "Capital Convention Center", category: "Summit", desc: "Keynote panel on the future of urban mobility and shared transport.", img: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=900&q=80" },
+const events: EventItem[] = [
+  { id: 1, name: "SANTACO Mpumalanga Elective AGM 2026", date: "Mar 12, 2026", location: "Bundu Lodge in Nelpruit", category: "Summit", desc: "Congratulations to the re-elected SANTACO Mpumalanga Provincial Excecutive Committee", video: agmVideo, img: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=900&q=80" },
   // { id: 2, name: "Driver Wellness Day", date: "Feb 02, 2025", location: "Riverside Park", category: "Community", desc: "A day of free health checks, training and family activities for our members." },
   // { id: 3, name: "Green Fleet Expo", date: "Nov 18, 2024", location: "Metro Arena", category: "Conference", desc: "Showcasing the latest hybrid and EV vehicles for taxi operators." },
   // { id: 4, name: "Annual Awards Gala", date: "Oct 04, 2024", location: "Grand Heritage Hotel", category: "Gala", desc: "Celebrating excellence and long service among our members." },
@@ -57,7 +69,9 @@ function EventsPage() {
             {filtered.map((e) => (
               <Card key={e.id} className="group hover-lift overflow-hidden p-0">
                 <div className="relative h-48 overflow-hidden bg-secondary">
-                  {e.img ? (
+                  {e.video ? (
+                    <video src={e.video} controls playsInline className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
+                  ) : e.img ? (
                     <img src={e.img} alt={e.name} loading="lazy" className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-110" />
                   ) : (
                     <div className="grid h-full w-full place-items-center gradient-hero text-primary-foreground/80 text-sm">
