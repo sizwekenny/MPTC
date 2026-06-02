@@ -9,6 +9,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, Phone, MapPin } from "lucide-react";
+import emailjs from "@emailjs/browser";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -32,18 +33,47 @@ function ContactPage() {
 
   async function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
+
     const form = e.currentTarget;
+
     const data = Object.fromEntries(new FormData(form));
+
     const parsed = schema.safeParse(data);
+
     if (!parsed.success) {
       toast.error(parsed.error.issues[0].message);
       return;
     }
+
     setSubmitting(true);
-    await new Promise((r) => setTimeout(r, 800));
-    setSubmitting(false);
-    form.reset();
-    toast.success("Message sent — we'll get back to you shortly.");
+
+    try {
+      await emailjs.send(
+        "service_gwfwv2l",
+        "template_a7xemj8",
+        {
+          name: parsed.data.name,
+          email: parsed.data.email,
+          subject: parsed.data.subject,
+          message: parsed.data.message,
+        },
+        "U1y9Zj-R1Xk8wDYn-"
+      );
+
+      form.reset();
+
+      toast.success(
+        "Message sent successfully. We'll get back to you shortly."
+      );
+    } catch (error) {
+      console.error("EmailJS Error:", error);
+
+      toast.error(
+        "Failed to send message. Please try again later."
+      );
+    } finally {
+      setSubmitting(false);
+    }
   }
 
   return (
