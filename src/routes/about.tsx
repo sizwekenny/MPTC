@@ -10,17 +10,7 @@ import ehlanzeni from "@/assets/ehlanzeni.jpeg";
 import gert from "@/assets/gertsibande.jpeg";
 import nkangala from "@/assets/nkangala.png";
 
-export const Route = createFileRoute("/about")({
-  head: () => ({
-    meta: [
-      { title: "About Us — Mpumalanga Provincial Taxi Council" },
-      { name: "description", content: "Learn about the mission, vision, values and leadership of the Mpumalanga Provincial Taxi Council." },
-    ],
-  }),
-  component: AboutPage,
-});
-
-const leaders = [
+export const leaders = [
   { name: "F.J Sibanyoni", role: "Chairperson", image: staffFff },
   { name: "J.K Phoku", role: "Deputy Chairperson", image: placeholderLogo },
   { name: "P.S Sibanyoni", role: "Secretary", image: placeholderTaxi },
@@ -33,6 +23,22 @@ const leaders = [
   { name: "M.A Mokonyane", role: "Executive Member", image: placeholderTaxi },
   { name: "M Nkalanga ", role: "Executive Member", image: placeholderTaxi },
 ];
+
+export const regionalOffices = [
+  { name: "Ehlanzeni RegionalTaxi Council (MA Msimango Office)", image: ehlanzeni, location: "116 Outteniqua Streets, white River" },
+  { name: "Gert Sibande Regional Taxi Council (DL Mabuza Office)", image: gert, location: "98 Oosthuizen Street, Ermelo" },
+  { name: "Nkangala Regional Taxi Council (MS Makeke Office)", image: nkangala, location: "18 Florida Streer, Model park, eMlalahleni" },
+];
+
+export const Route = createFileRoute("/about")({
+  head: () => ({
+    meta: [
+      { title: "About Us — Mpumalanga Provincial Taxi Council" },
+      { name: "description", content: "Learn about the mission, vision, values and leadership of the Mpumalanga Provincial Taxi Council." },
+    ],
+  }),
+  component: AboutPage,
+});
 
 function TabsLocal() {
   const [tab, setTab] = useState<"committee" | "offices">("committee");

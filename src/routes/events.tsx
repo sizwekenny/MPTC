@@ -1,9 +1,7 @@
-import { useState } from "react";
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/Section";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
 import { Calendar, MapPin } from "lucide-react";
 import agmVideo from "@/assets/AGM.mp4";
 
@@ -28,7 +26,7 @@ export const Route = createFileRoute("/events")({
   component: EventsPage,
 });
 
-const events: EventItem[] = [
+export const events: EventItem[] = [
   { id: 1, name: "SANTACO Mpumalanga Elective AGM 2026", date: "Mar 12, 2026", location: "Bundu Lodge in Nelpruit", category: "Summit", desc: "Congratulations to the re-elected SANTACO Mpumalanga Provincial Excecutive Committee", video: agmVideo, img: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=900&q=80" },
   // { id: 2, name: "Driver Wellness Day", date: "Feb 02, 2025", location: "Riverside Park", category: "Community", desc: "A day of free health checks, training and family activities for our members." },
   // { id: 3, name: "Green Fleet Expo", date: "Nov 18, 2024", location: "Metro Arena", category: "Conference", desc: "Showcasing the latest hybrid and EV vehicles for taxi operators." },
@@ -37,12 +35,7 @@ const events: EventItem[] = [
   // { id: 6, name: "Youth Career Fair", date: "May 15, 2024", location: "Trade Hall", category: "Community", desc: "Mentoring next-generation drivers and showcasing industry careers." },
 ];
 
-const categories = ["All", "Summit", "Community", "Conference", "Gala", "Forum"];
-
 function EventsPage() {
-  const [active, setActive] = useState("All");
-  const filtered = active === "All" ? events : events.filter((e) => e.category === active);
-
   return (
     <>
       <PageHero
@@ -52,21 +45,8 @@ function EventsPage() {
       />
       <section className="py-16">
         <div className="container-pro">
-          <div className="mb-10 flex flex-wrap justify-center gap-2">
-            {categories.map((c) => (
-              <button
-                key={c}
-                onClick={() => setActive(c)}
-                className={`rounded-full px-4 py-2 text-sm font-medium transition-colors ${
-                  active === c ? "bg-primary text-primary-foreground" : "bg-secondary text-foreground hover:bg-secondary/70"
-                }`}
-              >
-                {c}
-              </button>
-            ))}
-          </div>
           <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {filtered.map((e) => (
+            {events.map((e) => (
               <Card key={e.id} className="group hover-lift overflow-hidden p-0">
                 <div className="relative h-48 overflow-hidden bg-secondary">
                   {e.video ? (
@@ -78,7 +58,6 @@ function EventsPage() {
                       Event Photo
                     </div>
                   )}
-                  <Badge className="absolute left-3 top-3 bg-background/90 text-foreground">{e.category}</Badge>
                 </div>
                 <div className="p-6">
                   <h3 className="text-lg font-semibold">{e.name}</h3>

@@ -22,7 +22,7 @@ export const Route = createFileRoute("/news")({
 });
 
 const allNews = [
-  { id: 1, preview: "SANTACO Mpumalanga Province under the leadership of Mr FJ sibanyoni joined famaly members and mourner to pay their final respect at the Lekwata Mass funeral in Standerton. The organization extended its heartfelt condolences to the bereaved families and stood in solidarity wih the affected communities during this difficult time ", date: "May 30, 2026", title: "Santaco Mpumalanga at Lekwa Mass funeral in Mpumalanga provice", images: [news1,news2,news3,news4] },
+  { id: 1, preview: "SANTACO Mpumalanga Province under the leadership of Mr FJ Sibanyoni joined family members and mourner to pay their final respect at the Lekwa Mass funeral in Standerton. The organization extended its heartfelt condolences to the bereaved families and stood in solidarity with the affected communities during this difficult time ", date: "May 30, 2026", title: "Santaco Mpumalanga at Lekwa Mass funeral in Mpumalanga provice", images: [news1,news2,news3,news4] },
   { id: 2, title: "Congratulation to SANTACO Mpumalanga chairperson Mr FJ Sibanyoni on being elected as the second Deputy President of SANTACO National", date: "May 27, 2026", preview: "", images: [chair] },
   // { id: 3, title: "New safety standards adopted across the fleet", date: "Mar 28, 2025", preview: "Updated guidelines cover vehicle inspections, in-car cameras and incident reporting procedures." },
   // { id: 4, title: "Annual general meeting set for June", date: "Mar 12, 2025", preview: "Members are invited to participate in the AGM where new committee members will be elected." },
