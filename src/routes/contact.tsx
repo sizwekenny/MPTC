@@ -10,6 +10,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { Mail, Phone, MapPin } from "lucide-react";
 import emailjs from "@emailjs/browser";
+import heroImg from "@/assets/taxi.png";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -78,7 +79,7 @@ function ContactPage() {
 
   return (
     <>
-      <PageHero eyebrow="Contact" title="Let's talk" subtitle="Questions, partnership ideas, or membership enquiries — we'd love to hear from you." />
+      <PageHero eyebrow="Contact" title="Let's talk" subtitle="Questions, partnership ideas, or membership enquiries — we'd love to hear from you." image={heroImg} />
       <section className="py-16">
         <div className="container-pro grid gap-10 lg:grid-cols-5">
           <Card className="p-8 lg:col-span-3">

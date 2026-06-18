@@ -151,6 +151,50 @@ function Index() {
           ))}
         </div>
       </Section>
+
+      <Section eyebrow="Our Services" title="We're available for every journey">
+        <div className="grid gap-6 md:grid-cols-3">
+          {[
+            {
+              icon: MapPin,
+              title: "Local Trips",
+              description: "Navigate your town with ease. Professional drivers familiar with every route and neighborhood.",
+              color: "from-blue-500/20 to-blue-600/20",
+              borderColor: "border-blue-200/30",
+            },
+            {
+              icon: Car,
+              title: "Long Distance Travel",
+              description: "Safe, comfortable journeys across regions. Experienced drivers and modern vehicles for extended trips.",
+              color: "from-amber-500/20 to-amber-600/20",
+              borderColor: "border-amber-200/30",
+            },
+            {
+              icon: Users,
+              title: "Private Travel",
+              description: "Exclusive charter services for groups. Tailored solutions for events, tours, and corporate needs.",
+              color: "from-emerald-500/20 to-emerald-600/20",
+              borderColor: "border-emerald-200/30",
+            },
+          ].map((service, idx) => (
+            <Card
+              key={service.title}
+              className={`${service.borderColor} hover-lift border relative overflow-hidden p-6 transition-all duration-500 hover:shadow-lg hover:shadow-emerald-500/10 animate-fade-up`}
+              style={{ animationDelay: `${idx * 150}ms` }}
+            >
+              <div className={`absolute inset-0 bg-gradient-to-br ${service.color} opacity-0 transition-opacity duration-500 group-hover:opacity-100`} />
+              <div className="relative z-10">
+                <div className="mb-4 inline-block rounded-2xl bg-gradient-to-br from-primary/10 to-primary/5 p-3">
+                  <service.icon className="h-6 w-6 text-primary" />
+                </div>
+                <h3 className="mb-2 text-xl font-semibold">{service.title}</h3>
+                <p className="text-sm text-muted-foreground">{service.description}</p>
+              </div>
+            </Card>
+          ))}
+        </div>
+      </Section>
+
   <Section eyebrow="Recent Events" title="Latest from our events">
         <div className="grid gap-4 md:grid-cols-3">
           {events.slice(0, 3).map((e) => (

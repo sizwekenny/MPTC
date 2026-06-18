@@ -2,8 +2,11 @@ import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/Section";
 import { Card } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Calendar, MapPin } from "lucide-react";
+import { Calendar, MapPin, X } from "lucide-react";
 import agmVideo from "@/assets/AGM.mp4";
+import heroImg from "@/assets/taxi.png";
+import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogClose } from "@/components/ui/dialog";
+import { useState } from "react";
 
 type EventItem = {
   id: number;
@@ -36,12 +39,68 @@ export const events: EventItem[] = [
 ];
 
 function EventsPage() {
+  const [selectedEvent, setSelectedEvent] = useState<EventItem | null>(null);
+
   return (
     <>
+      <Dialog open={!!selectedEvent} onOpenChange={(open) => !open && setSelectedEvent(null)}>
+        <DialogContent className="max-w-2xl max-h-[90vh] overflow-y-auto">
+          <DialogHeader className="sticky top-0 bg-background z-10">
+            <DialogTitle>{selectedEvent?.name}</DialogTitle>
+          </DialogHeader>
+          {selectedEvent && (
+            <div className="space-y-6">
+              <div className="relative h-96 overflow-hidden rounded-lg bg-secondary">
+                {selectedEvent.video ? (
+                  <video
+                    src={selectedEvent.video}
+                    controls
+                    playsInline
+                    className="h-full w-full object-cover"
+                  />
+                ) : selectedEvent.img ? (
+                  <img
+                    src={selectedEvent.img}
+                    alt={selectedEvent.name}
+                    className="h-full w-full object-cover"
+                  />
+                ) : (
+                  <div className="grid h-full w-full place-items-center gradient-hero text-primary-foreground/80">
+                    Event Media
+                  </div>
+                )}
+              </div>
+
+              <div className="space-y-4">
+                <div className="space-y-3">
+                  <div className="flex items-center gap-3 text-sm">
+                    <Calendar className="h-4 w-4 text-primary" />
+                    <span className="font-medium">{selectedEvent.date}</span>
+                  </div>
+                  <div className="flex items-center gap-3 text-sm">
+                    <MapPin className="h-4 w-4 text-primary" />
+                    <span className="font-medium">{selectedEvent.location}</span>
+                  </div>
+                  <div className="inline-block rounded-full bg-primary/10 px-3 py-1 text-xs font-semibold text-primary">
+                    {selectedEvent.category}
+                  </div>
+                </div>
+
+                <div className="border-t pt-4">
+                  <h3 className="font-semibold mb-2">Event Details</h3>
+                  <p className="text-muted-foreground">{selectedEvent.desc}</p>
+                </div>
+              </div>
+            </div>
+          )}
+        </DialogContent>
+      </Dialog>
+
       <PageHero
         eyebrow="Events"
         title="Where we've been"
         subtitle="A look at the conferences, gatherings and community events we've attended and hosted."
+        image={heroImg}
       />
       <section className="py-16">
         <div className="container-pro">
@@ -66,7 +125,12 @@ function EventsPage() {
                     <span className="flex items-center gap-1"><MapPin className="h-3 w-3" /> {e.location}</span>
                   </div>
                   <p className="mt-3 text-sm text-muted-foreground">{e.desc}</p>
-                  <Button variant="ghost" size="sm" className="mt-4 px-0 text-primary hover:bg-transparent hover:text-primary/80">
+                  <Button
+                    onClick={() => setSelectedEvent(e)}
+                    variant="ghost"
+                    size="sm"
+                    className="mt-4 px-0 text-primary hover:bg-transparent hover:text-primary/80"
+                  >
                     View More →
                   </Button>
                 </div>

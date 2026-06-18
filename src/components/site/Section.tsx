@@ -33,10 +33,20 @@ export function Section({
   );
 }
 
-export function PageHero({ eyebrow, title, subtitle }: { eyebrow?: string; title: string; subtitle?: string }) {
+export function PageHero({ eyebrow, title, subtitle, image }: { eyebrow?: string; title: string; subtitle?: string; image?: string }) {
   return (
-    <section className="relative overflow-hidden border-b border-border gradient-hero">
-      <div className="container-pro py-20 text-center text-primary-foreground md:py-28">
+    <section className="relative isolate overflow-hidden border-b border-border min-h-[60vh] md:min-h-[70vh]">
+      {image && (
+        <img
+          src={image}
+          alt="Hero background"
+          width={1920}
+          height={1080}
+          className="absolute inset-0 h-full w-full object-cover"
+        />
+      )}
+      <div className="absolute inset-0" style={{ background: "var(--gradient-overlay)" }} />
+      <div className="relative container-pro py-20 text-center text-primary-foreground md:py-28 min-h-[60vh] md:min-h-[70vh] flex flex-col items-center justify-center">
         {eyebrow && <p className="mb-3 text-xs font-semibold uppercase tracking-[0.2em] text-gradient-gold animate-fade-in">{eyebrow}</p>}
         <h1 className="text-4xl font-bold md:text-5xl animate-fade-up">{title}</h1>
         {subtitle && <p className="mx-auto mt-4 max-w-2xl text-primary-foreground/80 animate-fade-up">{subtitle}</p>}

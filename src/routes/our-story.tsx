@@ -1,6 +1,7 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { PageHero } from "@/components/site/Section";
 import { Card } from "@/components/ui/card";
+import heroImg from "@/assets/taxi.png";
 
 export const Route = createFileRoute("/our-story")({
   head: () => ({
@@ -31,6 +32,7 @@ function StoryPage() {
         eyebrow="Our Story"
         title="SANTACO is the national representative body of the taxi industry in South Africa."
         subtitle="From a small collective to a leading industry voice — these are the moments that shaped us."
+        image={heroImg}
       />
       <section className="py-16 md:py-24">
         <div className="container-pro">

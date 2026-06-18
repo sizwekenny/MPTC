@@ -10,6 +10,7 @@ import news2 from "@/assets/news/22.jpeg";
 import news3 from "@/assets/news/33.jpeg";
 import news4 from "@/assets/news/44.jpeg";
 import chair from "@/assets/news/cha.jpeg";
+import heroImg from "@/assets/taxi.png";
 
 export const Route = createFileRoute("/news")({
   head: () => ({
@@ -45,7 +46,7 @@ function NewsPage() {
 
   return (
     <>
-      <PageHero eyebrow="News" title="Latest from the council" subtitle="Stay up to date with our latest announcements and stories." />
+      <PageHero eyebrow="News" title="Latest from the council" subtitle="Stay up to date with our latest announcements and stories." image={heroImg} />
       <section className="py-16">
         <div className="container-pro">
           <div className="mx-auto mb-10 max-w-md">
