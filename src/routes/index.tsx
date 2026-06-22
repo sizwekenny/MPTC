@@ -98,7 +98,7 @@ function Index() {
           </p>
           <h1 className="max-w-3xl text-4xl font-bold leading-tight md:text-6xl animate-fade-up">
             Driving Excellence,<br />
-            <span className="text-gradient-gold">Serving Our City.</span>
+            <span className="text-gradient-gold">Serving Our Town.</span>
           </h1>
           <p className="mt-6 max-w-xl text-lg text-primary-foreground/85 animate-fade-up">
             The <strong className="uppercase font-semibold text-yellow-400">Mpumalanga Provincial Taxi Council</strong> unites professional drivers and operators committed to safety,
