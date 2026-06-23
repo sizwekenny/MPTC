@@ -18,7 +18,10 @@ export function Footer() {
             Representing professional taxi operators with integrity, safety, and excellence since 2001.
           </p>
           <div className="flex gap-3">
-            {[Facebook, Twitter, Linkedin, Instagram].map((Icon, i) => (
+            <a href="https://web.facebook.com/profile.php?id=61589797526626" target="_blank" rel="noopener noreferrer" className="grid h-9 w-9 place-items-center rounded-full bg-background text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground">
+              <Facebook className="h-4 w-4" />
+            </a>
+            {[Twitter, Linkedin, Instagram].map((Icon, i) => (
               <a key={i} href="#" className="grid h-9 w-9 place-items-center rounded-full bg-background text-muted-foreground transition-colors hover:bg-primary hover:text-primary-foreground">
                 <Icon className="h-4 w-4" />
               </a>
