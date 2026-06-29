@@ -3,26 +3,27 @@ import { Card } from "@/components/ui/card";
 import { PageHero, Section } from "@/components/site/Section";
 import { useState } from "react";
 import { Target, Eye, Heart, Users } from "lucide-react";
-import staffFff from "@/assets/fff.jpg";
-import placeholderLogo from "@/assets/logo.png";
+import chair from "@/assets/profiles/chair.jpeg";
+import phoku from "@/assets/profiles/poku.jpeg";
 import heroImg from "@/assets/taxi.png";
-import placeholderTaxi from "@/assets/taxi.png";
+import sibanyoni from "@/assets/profiles/sibanyoni.jpeg";
+import masango from "@/assets/profiles/masango.jpeg";
 import ehlanzeni from "@/assets/ehlanzeni.jpeg";
 import gert from "@/assets/gertsibande.jpeg";
 import nkangala from "@/assets/nkangala.png";
 
 export const leaders = [
-  { name: "F.J Sibanyoni", role: "Chairperson", image: staffFff },
-  { name: "J.K Phoku", role: "Deputy Chairperson", image: placeholderLogo },
-  { name: "P.S Sibanyoni", role: "Secretary", image: placeholderTaxi },
-  { name: "L.L Manana", role: "Deputy Secretary", image: placeholderLogo },
-  { name: "D.S Masango", role: "Treasurer", image: placeholderTaxi },
-  { name: "K.W Moropa", role: "Training Officer", image: placeholderTaxi },
-  { name: "L Zulu", role: "Chairperson Women Desk", image: placeholderTaxi },
-  { name: "J Khosa ", role: "Disciplinary Committee", image: placeholderTaxi },
-  { name: "J.S Simelane", role: "Executive Member", image: placeholderTaxi },
-  { name: "M.A Mokonyane", role: "Executive Member", image: placeholderTaxi },
-  { name: "M Nkalanga ", role: "Executive Member", image: placeholderTaxi },
+  { name: "F.J Sibanyoni", role: "Chairperson", image: chair },
+  { name: "J.K Phoku", role: "Deputy Chairperson", image: phoku },
+  { name: "P.S Sibanyoni", role: "Secretary", image: sibanyoni },
+  { name: "L.L Manana", role: "Deputy Secretary", image: heroImg },
+  { name: "D.S Masango", role: "Treasurer", image: masango },
+  { name: "K.W Moropa", role: "Training Officer", image: heroImg },
+  { name: "L Zulu", role: "Chairperson Women Desk", image: heroImg },
+  { name: "J Khosa ", role: "Disciplinary Committee", image: heroImg },
+  { name: "J.S Simelane", role: "Executive Member", image: heroImg },
+  { name: "M.A Mokonyane", role: "Executive Member", image: heroImg },
+  { name: "M Nkalanga ", role: "Executive Member", image: heroImg },
 ];
 
 export const regionalOffices = [
