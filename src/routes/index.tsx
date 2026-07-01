@@ -27,7 +27,7 @@ function Index() {
     <>
       <Dialog open={showGallery} onOpenChange={setShowGallery}>
         <DialogContent className="max-h-[90vh] max-w-4xl overflow-y-auto">
-          <DialogHeader className="sticky top-0 bg-background z-10">
+          <DialogHeader className="top-0 bg-background z-10">
             <DialogTitle>Council & Regional Offices</DialogTitle>
           </DialogHeader>
           <div className="space-y-6">

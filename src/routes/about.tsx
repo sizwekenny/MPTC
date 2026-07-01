@@ -6,6 +6,7 @@ import { useState } from "react";
 import { Target, Eye, Heart, Users, Sparkles, ShieldCheck, Handshake, BadgeCheck, ArrowRight } from "lucide-react";
 import chair from "@/assets/profiles/chair.jpeg";
 import phoku from "@/assets/profiles/poku.jpeg";
+import manana from "@/assets/profiles/manana.jpeg";
 import heroImg from "@/assets/taxi.png";
 import sibanyoni from "@/assets/profiles/sibanyoni.jpeg";
 import masango from "@/assets/profiles/masango.jpeg";
@@ -17,7 +18,7 @@ export const leaders = [
   { name: "F.J Sibanyoni", role: "Chairperson", image: chair },
   { name: "J.K Phoku", role: "Deputy Chairperson", image: phoku },
   { name: "P.S Sibanyoni", role: "Secretary", image: sibanyoni },
-  { name: "L.L Manana", role: "Deputy Secretary", image: heroImg },
+  { name: "L.L Manana", role: "Deputy Secretary", image: manana },
   { name: "D.S Masango", role: "Treasurer", image: masango },
   { name: "K.W Moropa", role: "Training Officer", image: heroImg },
   { name: "L Zulu", role: "Chairperson Women Desk", image: heroImg },
@@ -123,8 +124,8 @@ function TabsLocal() {
       {tab === "committee" ? (
         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {leaders.map((m) => (
-            <Card key={m.name} className="group hover-lift overflow-hidden p-4 text-center sm:p-5">
-              <div className="mx-auto mb-4 h-40 w-40 overflow-hidden rounded-[1.25rem] border-2 border-white/80 bg-secondary/50 p-0 shadow-md ring-1 ring-black/5 transition-all duration-300 group-hover:-translate-y-1 group-hover:scale-[1.03]">
+            <Card key={m.name} className="group hover-lift overflow-hidden px-3 py-4 text-center sm:px-4 sm:py-5">
+              <div className="mx-auto mb-4 h-40 w-40 overflow-hidden rounded-[1.25rem] border-2 border-white/80 bg-secondary/50 shadow-md ring-1 ring-black/5 transition-all duration-300 group-hover:-translate-y-1 group-hover:scale-[1.03]">
                 <img src={m.image} alt={m.name} className="h-full w-full object-cover object-center" />
               </div>
               <h3 className="font-semibold">{m.name}</h3>
