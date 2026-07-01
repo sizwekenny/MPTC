@@ -53,13 +53,13 @@ function Index() {
             {galleryTab === "council" ? (
               <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
                 {leaders.map((m) => (
-                  <Card key={m.name} className="group hover-lift overflow-hidden p-6 text-center">
-                    <div className="mx-auto mb-4 h-28 w-28 rounded-full overflow-hidden transition-transform group-hover:scale-105">
-                      <img src={m.image} alt={m.name} className="h-full w-full object-cover" />
+                  <Card key={m.name} className="group hover-lift overflow-hidden p-4 text-center sm:p-5">
+                    <div className="mx-auto mb-4 h-40 w-40 overflow-hidden rounded-[1.25rem] border-2 border-white/80 bg-secondary/50 p-0 shadow-md ring-1 ring-black/5 transition-all duration-300 group-hover:-translate-y-1 group-hover:scale-[1.03]">
+                      <img src={m.image} alt={m.name} className="h-full w-full object-cover object-center" />
                     </div>
                     <h3 className="font-semibold">{m.name}</h3>
                     <p className="mt-1 text-sm text-gradient-gold font-medium">{m.role}</p>
-                    <div className="mt-3 flex items-center justify-center gap-1 text-xs text-muted-foreground">
+                    <div className="mt-2 flex items-center justify-center gap-1 text-xs text-muted-foreground">
                       <Users className="h-3 w-3" /> Council Member
                     </div>
                   </Card>

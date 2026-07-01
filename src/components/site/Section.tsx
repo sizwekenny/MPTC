@@ -6,15 +6,17 @@ export function Section({
   subtitle,
   children,
   className = "",
+  id,
 }: {
   eyebrow?: string;
   title?: string;
   subtitle?: string;
   children: ReactNode;
   className?: string;
+  id?: string;
 }) {
   return (
-    <section className={`py-16 md:py-24 ${className}`}>
+    <section id={id} className={`py-16 md:py-24 ${className}`}>
       <div className="container-pro">
         {(eyebrow || title || subtitle) && (
           <div className="mx-auto mb-12 max-w-2xl text-center animate-fade-up">
